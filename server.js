@@ -6,7 +6,7 @@ app.set('env', 'development');
 app.disable('x-powered-by');
 
 function log(req, res, next) {
-    console.log(names);
+   console.log(names);
     next();
 };
 
