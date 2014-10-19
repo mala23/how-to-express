@@ -2,6 +2,8 @@ var express     = require('express'),
     bodyParser  = require('body-parser'),
     app         = express();
 
+app.set('env', 'development');
+
 function log(req, res, next) {
     console.log(names);
     next();
