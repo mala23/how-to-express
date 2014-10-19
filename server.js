@@ -3,6 +3,7 @@ var express     = require('express'),
     app         = express();
 
 app.set('env', 'development');
+app.disable('x-powered-by');
 
 function log(req, res, next) {
     console.log(names);
